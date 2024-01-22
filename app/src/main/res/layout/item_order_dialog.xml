@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_LinearLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:weightSum="4"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/item_order_dialog_AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/item_order_dialog_topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:title="New Item"
+            app:navigationIcon="@drawable/ic_baseline_close_24"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary">
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_item_order_dialog_itemname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:startIconDrawable="@drawable/ic_baseline_shopping_cart_24"
+            app:startIconContentDescription="Item Name"
+            app:endIconMode="clear_text"
+
+            app:errorEnabled="true"
+            android:hint="Enter item name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_item_order_dialog_itemname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_item_order_dialog_qty"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:startIconDrawable="@drawable/ic_baseline_subject_24"
+            app:startIconContentDescription="qty"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            android:hint="">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_item_order_dialog_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="0123456789"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_item_order_dialog_customer"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:startIconDrawable="@drawable/baseline_person_24"
+            app:startIconContentDescription="customer"
+            app:endIconMode="clear_text"
+
+            app:errorEnabled="true"
+            android:hint="Customer">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_item_order_dialog_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_save_new_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Add"
+            app:backgroundTint="@color/honeycolorlight"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+        android:title="Clear"
+        android:id="@+id/orders_clear"
+        android:icon="@drawable/baseline_delete_forever_24"/>
+    <item
+        android:title="Save"
+        android:id="@+id/orders_save"
+        android:icon="@drawable/baseline_save_as_24"/>
+    <item
+        android:title="Print"
+        android:id="@+id/orders_print"
+        android:icon="@drawable/baseline_local_printshop_24"/>
+
+</menu>

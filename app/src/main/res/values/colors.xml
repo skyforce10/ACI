@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="Crimson">#DC143C</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="oil">#333333</color>
+    <color name="iron">#CCCCCC</color>
+
+
+    <color name="colorWhite">#fcfafa</color>
+
+    <color name="cldarkLightbluesmalldegree">#2D9BBB</color>
+    <color name="cldarkLightblue">#1A85A0</color>
+
+    <color name="style_color_light">#5AB8E2</color>
+
+
+    <color name="login_btn">#488D4C</color>
+
+    <color name="beige">#EFF3EF</color>
+
+    <color name="fbutton_color_green_sea">#16a085</color>
+    <color name="fbutton_color_light_sea">#8EE2CF</color>
+    <color name="fbutton_color_nephritis">#27ae60</color>
+    <color name="fbutton_color_midnight_blue">#2c3e50</color>
+    <color name="fbutton_color_sun_flower">#f1c40f</color>
+    <color name="fbutton_color_orange">#f39c12</color>
+    <color name="fbutton_color_pumpkin">#d35400</color>
+    <color name="fbutton_color_pomegranate">#c0392b</color>
+    <color name="fbutton_color_silver">#bdc3c7</color>
+    <color name="fbutton_color_silver_light">#D7DBDF</color>
+    <color name="fbutton_color_silver_light_double">#ECECEC</color>
+    <color name="fbutton_color_asbestos">#7f8c8d</color>
+    <color name="fbutton_color_bootstrapdanger">#d9534f</color>
+    <color name="fbutton_color_bootstrapdanger_lite">#F07975</color>
+    <color name="fbutton_color_bootstrapblue_lite">#5bc0de</color>
+
+
+    <color name="semiTransparentColor">#20ffffff</color>
+
+    <color name="btn_send_pressed">#006633</color>
+    <color name="btn_context_menu_text_red">#ffff0000</color>
+
+    <color name="fab_color_pressed">#007787</color>
+
+    <color name="honeycolor">#a98307</color>
+    <color name="honeycolorlight">#D1A548</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

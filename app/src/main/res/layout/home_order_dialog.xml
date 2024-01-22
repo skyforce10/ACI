@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/semiTransparentColor"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:showDividers="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="6"
+                android:padding="5dp"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_columnSpan="6"
+                    android:layout_gravity="fill"
+
+                    app:startIconDrawable="@drawable/baseline_person_24"
+                    app:startIconContentDescription="fullname"
+                    app:endIconMode="clear_text"
+
+                    app:errorEnabled="true"
+                    android:hint="Supplier">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_supplier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            </GridLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fbutton_color_bootstrapdanger"
+            android:orientation="horizontal"
+            >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="6"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Item"
+
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Qty"
+
+
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Customer"
+
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:layout_gravity="fill_horizontal"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+                    android:textSize="13sp"
+                    />
+
+
+
+            </GridLayout>
+
+        </LinearLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:swiperefresh="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/items_order_swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/items_order_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/semiTransparentColor">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_add_new_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:backgroundTint="@color/fbutton_color_pomegranate"
+            app:strokeColor="@color/fbutton_color_pomegranate"
+            app:iconTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible"
+            android:layout_gravity="bottom|right"
+            android:contentDescription="extended_fab_content_desc"
+
+            app:icon="@drawable/ic_baseline_add_shopping_cart_24"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_save_new_orderdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:iconTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible"
+            android:layout_gravity="bottom|left"
+            android:contentDescription="extended_fab_content_desc"
+
+            app:icon="@drawable/baseline_save_as_24"/>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

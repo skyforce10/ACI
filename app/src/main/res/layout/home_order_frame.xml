@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_search"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="10dp"
+        android:hardwareAccelerated="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardBackgroundColor="@color/beige"
+        android:padding="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/semiTransparentColor"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:showDividers="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/semiTransparentColor"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:showDividers="none">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Supplier : "
+                    android:textColor="@color/fbutton_color_midnight_blue"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:id="@+id/lbl_order_supplier"
+                    android:text="Fullname"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="true"
+                    android:divider="@drawable/clients_buttonsgroup_devider"
+                    android:showDividers="middle"
+                    android:layout_gravity="center"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    app:selectionRequired="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <Button
+                        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                        android:id="@+id/btn_go_todocuments_client_list_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:icon="@drawable/ic_baseline_remove_red_eye_24"
+                        />
+                    <Button
+                        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                        app:icon="@drawable/ic_baseline_delete_24"
+                        app:iconTint="@color/fbutton_color_pomegranate"
+                        android:id="@+id/btn_delete_client_list_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
